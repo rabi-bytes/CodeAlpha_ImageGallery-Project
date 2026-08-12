@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <header>
+    <h1>Image Gallery</h1>
+    <p>Rabi's Cars Collection</p>
+    </header>
+    <!--image categories-->
+    <div class="filters">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="Buggati">Buggati</button>
+        <button class="filter-button" data-filter="Lamborgini">Lamborgini</button>
+        <button class="filter-button" data-filter="Ferrari">Ferrari</button>
+        <button class="filter-button" data-filter="Porsche">Porsche</button>
+    </div>
+
+    <!--images collection-->
+    <section class="gallery">
+        <div class="gallery-items" data-category="Buggati">
+            <img src="https://media.wired.com/photos/5b806816be2f8d3a624b77c9/3:2/w_2560%2Cc_limit/DIVO1.jpg" 
+            alt="Buggati">
+        </div>
+        <div class="gallery-items" data-category="Lamborgini">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu2bFC3qMJ7XkyiY_Jkck6SLvzNcDWlkYxtxb2c_ZscQ&s=10" 
+            alt="Lamborgini">
+        </div>
+        <div class="gallery-items" data-category="Ferrari">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnA3uTKoSlqTwjY6Ce3LZOTvY_KBeoKF5tJzXzBhB7epeQQ87qgrXiU69f&s=10"
+            alt="Ferrari">
+        </div>
+        <div class="gallery-items" data-category="Porsche">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZ2L45GqzmuAVu_vAYObNnj-eyc3XkrQiSUZzCvwnFA&s=10"
+            alt="Porsche">
+        </div>
+        <div class="gallery-items" data-category="Buggati">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKjkZGExlZVTikRoNLyZe0MUoWV7mdD5ubnmcRAeVAXIygxFLnqzxk2gg&s=10"
+            alt="Buggati">
+        </div>
+        <div class="gallery-items" data-category="Lamborgini">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_A1ByMzfxt8v9VSxwQL82LUvTF_ki27XQKTjIsIGUA&s=10"
+            alt="Lamborgini">
+        </div>
+        <div class="gallery-items" data-category="Ferrari">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf8zHh68NYUbwjzQDbVYtNEEcLaHCEYt_XAxqF1rbKRg&s=10"
+            alt="Ferrari">
+        </div>
+        <div class="gallery-items" data-category="Porsche">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnOhluwJL0S3VpldcQvizd5j8u34QINp41oVCIWUQJg&s=10"
+            alt="Porsche">
+        </div>
+        <div class="gallery-items" data-category="Buggati">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYI-N8WLkUCWmMJ80NkdW7kCDWrPRwLofksTi-Z5RcVQ&s=10"
+            alt="Buggati">
+        </div>
+         <div class="gallery-items" data-category="Lamborgini">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8AwZfaGw5pM0LvLwUG5_OSYUhnwkwsea8sfkoAKhh7g&s=10" alt="Lamborgini">
+         </div>
+        <div class="gallery-items" data-category="Ferrari">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTdW0on7s5lx2V3Qg_eOgahgtCrYTYT0rNlp70mrsDSQ&s=10" alt="Ferrari">
+        </div>
+        <div class="gallery-items" data-category="Porsche">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJwM78TLNpc6Hh6KrCvzbclVm9huaAFNvedkKRRj4Xmg&s=10" alt="Porsche">
+        </div>
+    </section>
+
+    <!---lightbox-->
+   <div class="lightbox" id="lightbox">
+    <button class="close" id="close" aria-label="Close" title="Close">&times;</button>
+    <button class="prev" id="prev" aria-label="Previous" title="Previous">&lt;</button>
+    <img id="lightbox-img" src="" alt="Preview">
+    <button class="next" id="next" aria-label="Next" title="Next">&gt;</button>
+</div>
+    <script src="image.js"></script>
+</body>
+</html>
